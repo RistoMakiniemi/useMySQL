@@ -17,10 +17,18 @@
 # Servername settings
 #    ServerName localhost:8080
 #
-#
 # Press Apache and MySQL modules Start- buttons
 #
+# Start using sample database originally downloaded from http://www.mysqltutorial.org/mysql-sample-database.aspx 
 # 
+# Modified sample database can be found folder usqMysQL (C:\xampp\htdocs\useMySQL\mysqlsampledatabase2.sql)
+# Load the sample database into MySQL database server
 #
+#  in Browser:  http://localhost:8080/phpmyadmin/
+#
+# Press "Import"
+#
+# Donwload this useMySQL to folder C:\xampp\htdocs
+# 
 # Start useMySQL
 #    in Browser:  http://localhost:8080/useMySQL/index.php
