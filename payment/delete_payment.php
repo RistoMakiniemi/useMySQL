@@ -71,7 +71,8 @@ function escape($html) {
             <td><?php echo escape($row["checkNumber"]); ?></td>
             <td><?php echo escape($row["paymentDate"]); ?></td>
             <td><?php echo escape($row["amount"]); ?></td>
-            <td><a href="delete_payment.php?customerNumber=<?php echo escape($row["customerNumber"]); ?>">Delete</a></td>
+            <td><a href="delete_payment.php?customerNumber=<?php echo escape($row["customerNumber"]); ?> & 
+                                        checkNumber=<?php echo escape($row["checkNumber"]); ?>">Delete</a></td>
         </tr>
     <?php } ?>
     </tbody>
