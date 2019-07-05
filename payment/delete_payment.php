@@ -15,9 +15,10 @@ include '../db_connection.php';
 if (isset($_GET['customerNumber'])) {
     $conn = openconnection();
     $customerNumber = $_GET["customerNumber"];
+    $checkNumber = $_GET["checkNumber"];
 
     // Some Query
-    $sql 	= "DELETE FROM payments WHERE customerNumber = '$customerNumber'";
+    $sql 	= "DELETE FROM payments WHERE customerNumber = '$customerNumber' AND checkNumber = '$checkNumber'";
 
     if ($conn->query($sql) === TRUE) {
         echo "Record deleted successfully";
